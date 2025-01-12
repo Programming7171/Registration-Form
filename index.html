@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="logo.png" alt="Finstack Logo" class="top-logo-img">
+        </div>
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h3>Complete registration</h3>
+                <p>Create or accept offers at your preferred rate.</p>
+            </div>
+
+            <div class="sidebar-menu">
+                <div class="menu-group">
+                    <img src="Pesonal.png" alt="" class="Personal-information">
+
+                    <div class="menu-item active"><a href="">Personal information</a></div>
+                </div>
+                <div class="vertical-line"></div>
+
+                <div class="menu-group">
+                    <a href="/Review amount.html"><img src="Review.png" alt="" class="Personal"></a>
+
+                    <div class="menu-item"><a href="/Review amount.html">Review amount</a></div>
+                </div>
+                <div class="vertical-line"></div>
+
+                <div class="menu-group">
+                    <a href="/Bank details.html"><img src="Bank.png" alt="" class="Personal"></a>
+
+                    <div class="menu-item"><a href="/Bank details.html">Bank details</a></div>
+                </div>
+                <div class="vertical-line"></div>
+
+                <div class="menu-group">
+                    <a href="/Confirm payment.html"><img src="Confirm payment.png" alt="" class="Personal"></a>
+                    <div class="menu-item"><a href="/Confirm payment.html">Confirm payment</a></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <div class="user-info">
+                    <span class="user-icon"></span>
+
+                    <div class="top-right-menu">
+                        <div class="dropdown">
+                            <button class="dropdown-toggle" id="dropdownButton">
+                                <div class="profile-initials" id="profileInitials">ME</div>
+                                <div class="info">
+                                    <span class="name" id="displayName">Mavrick Egbuson</span>
+                                    <span class="email" id="displayEmail">mavrick.eth@gmail.com</span>
+                                </div>
+                                <span class="arrow"></span>
+                            </button>
+                            <div class="dropdown-menu" id="dropdownMenu">
+                                <a href="#" data-name="Mavrick Egbuson" data-email="mavrick.eth@gmail.com">
+                                    Mavrick Egbuson<br>
+                                    <span>mavrick.eth@gmail.com</span>
+                                </a>
+                                
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <span class="dropdown-icon"></span>
+                    </div>
+                </div>
+                <div class="close-section" style="margin-left: 20px; margin-top: 60px;">
+                    <button class="close-button" id="closeButton">X Close</button>
+                </div>
+            </div>
+            <div class="form-container">
+                <h2>Personal Information</h2>
+                <p style="margin-top: 2px;">Enter your personal details as required below</p>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First name</label>
+                            <input type="text" id="first-name" placeholder="Enter your first name">
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last name</label>
+                            <input type="text" id="last-name" placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone number</label>
+                            <div class="phone-input-container">
+                                <img id="selected-flag" class="flag-icon" src="https://flagcdn.com/us.svg"
+                                    alt="Selected Flag">
+                                <select class="country-select" id="country-code">
+                                    <option value="+1" data-flag="https://flagcdn.com/us.svg" selected>+417</option>
+                                    <option value="+92" data-flag="https://flagcdn.com/pk.svg">+92</option>
+                                    <option value="+44" data-flag="https://flagcdn.com/gb.svg">+44</option>
+                                    <option value="+81" data-flag="https://flagcdn.com/jp.svg">+81</option>
+                                    <option value="+33" data-flag="https://flagcdn.com/fr.svg">+33</option>
+                                    <option value="+49" data-flag="https://flagcdn.com/de.svg">+49</option>
+                                </select>
+                                <input type="tel" class="phone-input" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="dob">Date of birth</label>
+                            <input type="date" id="dob">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" placeholder="Enter address">
+                    </div>
+                    <div class="form-row" style="gap: 50px; margin-top: 25px;">
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <select id="country">
+                                <option value="">Select country</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="postal-code">Postal code</label>
+                            <input type="text" id="postal-code" placeholder="Postal code">
+                        </div>
+                    </div>
+                    <p class="info-text">Ensure your name matches the name on your bank account or your exchange might
+                        be delayed</p>
+                    <div class="form-actions">
+                        <button type="button" class="skip-button">Skip</button>
+                        <button type="submit" class="save-button">Save & continue</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
